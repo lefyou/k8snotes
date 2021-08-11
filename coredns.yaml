@@ -185,7 +185,7 @@ metadata:
 spec:
   selector:
     k8s-app: kube-dns
-  clusterIP: 10.10.0.2
+    clusterIP: 10.10.0.2 # update this to the right one based up the IP Range of the Service Cluster in kube-controller-manager.service file. Like: service-cluster-ip-range=10.10.0.0/16
   ports:
   - name: dns
     port: 53
